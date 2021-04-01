@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="frontend/style/main.css">
+    <!-- end my css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Wareg-Restaurant</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="frontend/images/logo/Logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navb" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#meals">Meals</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#beverages">Beverages</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#chef">Chef</a>
+                    </li>
+                </ul>
+                <!-- mobile button -->
+                <form class="form-inline d-sm-block d-md-none mt-2">
+                    <div class="nav-item">
+                        <a href="#" class="nav-icon"><i class="bi bi-bell-fill"></i></a>
+                    </div>
+                </form>
+                <form class="form-inline d-sm-block d-md-none mt-2">
+                    <div class="nav-item">
+                        <a href="#" class="nav-icon"><i class="bi bi-cart-plus-fill"></i></a>
+                    </div>
+                </form>
+                <form class="form-inline d-sm-block d-md-none mt-3">
+                    <div class="nav-item">
+                        <a href="#" class="btn btn-account-mobile">My Account</a>
+                    </div>
+                </form>
+                <!-- End Mobile -->
+
+                <!-- Desktop -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <div class="nav-item">
+                        <a href="#" class="nav-icon mx-3"><i class="bi bi-bell-fill"></i></a>
+                    </div>
+                </form>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <div class="nav-item">
+                        <a href="#" class="nav-icon mx-3"><i class="bi bi-cart-plus-fill"></i></a>
+                    </div>
+                </form>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-none d-lg-block ml-5">
+                    <div class="nav-item">
+                        <img src="frontend/images/Path 9.png" alt="">
+                    </div>
+                </form>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <div class="nav-item">
+                        <a href="#" class="btn btn-account-desktop">My Account</a>
+                    </div>
+                </form>
+            </div>
+            <!-- End Menu -->
+        </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- Header -->
+    <section class="section-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <h1 class="mb-2"><span>Find Food</span> According <br> to Your Taste</h1>
+                    <p>Enjoy our restaurant food with <br> your beloved family, with a special menu.</p>
+                    <a href="#" class="btn btn-get-now mt-4">Get Now</a>
+                </div>
+                <div class="col-5 offset-1 d-none d-md-block">
+                    <img src="frontend/images/hero/hero_img.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Statistik -->
+    <section class="section-statistik mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3 mb-3 text-center">
+                    <h5 class="fw-bold">230.000+</h5>
+                    <p>Menu Foods</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3 text-center">
+                    <h5 class="fw-bold">50.000+</h5>
+                    <p>Course</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3 text-center">
+                    <h5 class="fw-bold">170.000+</h5>
+                    <p>Graduate</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3 text-center">
+                    <h5 class="fw-bold">280.000+</h5>
+                    <p>Chef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Statistik -->
+
+    <!-- Seafood -->
+    <section class="section-seafood">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Seafood Pizza</h1>
+                    <h3 class="mt-3">$15.00
+                        <a href="#">
+                            <img src="frontend/images/about/btn_get.png" class="img-fluid ms-3" width="30px" alt="">
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Seafood -->
+
+    <!-- Images -->
+    <section class="section-seafood-content">
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-md-block col-md-2">
+                    <div class="media">
+                        <img src="frontend/images/about/disc_1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-2">
+                    <div class="media">
+                        <img src="frontend/images/about/disc_2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-2">
+                    <div class="media">
+                        <img src="frontend/images/about/disc_3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Images -->
+
+    <!-- About -->
+    <section class="section-about-content d-flex justify-content-end">
+        <div class="section-about d-none d-md-block">
+            <h3 class="mt-4">About Cake</h3>
+            <p>
+                Pizza adalah sebuah hidangan yang gurih <br> dan nikmat berasal dari italia yang berbentuk bundar <br> dan dilumuri saus tomat dan keju. <br> <br> Pizza mengandung banyak vitamin dan juga protein <br> yang bagus untuk kesehatan tubuh,
+                terutama
+                <br> jika di hidangkan di saat perut sedang lapar <br>
+            </p>
+        </div>
+    </section>
+    <!-- End About -->
+
+
+    <!-- Menu Special -->
+    <section class="section-menu-special">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h3><span>Special</span> In Our <br> Restaurant</h3>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <figure class="figure text-center">
+                        <img src="frontend/images/special/menu1.jpg" class="img-figure img-fluid" alt="">
+                        <h4 class="mt-3">Pizza Hut</h4>
+                        <p class="text-muted">Chow Marcell</p>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <figure class="figure text-center">
+                        <img src="frontend/images/special/menu2.jpg" class="img-figure img-fluid" alt="">
+                        <h4 class="mt-3">Pizza Hut</h4>
+                        <p class="text-muted">Chow Marcell</p>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <figure class="figure text-center">
+                        <img src="frontend/images/special/menu3.jpg" class="img-figure img-fluid" alt="">
+                        <h4 class="mt-3">Pizza Hut</h4>
+                        <p class="text-muted">Chow Marcell</p>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <figure class="figure text-center">
+                        <img src="frontend/images/special/menu4.jpg" class="img-figure img-fluid" alt="">
+                        <h4 class="mt-3">Pizza Hut</h4>
+                        <p class="text-muted">Chow Marcell</p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu Special -->
+
+    <!-- Category -->
+    <section class="section-category-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 text-center">
+                    <h3>Category <br> <span>Meals & Beverages</span></h3>
+                </div>
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item active" role="presentation">
+                            <button class="nav-link active" id="juice-tab" data-bs-toggle="tab" data-bs-target="#juice" type="button" role="tab" aria-controls="juice" aria-selected="true">Juice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vegetable-tab" data-bs-toggle="tab" data-bs-target="#vegetable" type="button" role="tab" aria-controls="vegetable" aria-selected="false">Vegetable</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="healty-tab" data-bs-toggle="tab" data-bs-target="#healty" type="button" role="tab" aria-controls="healty" aria-selected="false">Healty Food</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="seafood-tab" data-bs-toggle="tab" data-bs-target="#seafood" type="button" role="tab" aria-controls="seafood" aria-selected="false">Seafood</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Category -->
+
+    <!-- juices -->
+    <section class="section-juices-category tab-content" id="myTabContent">
+        <div class="container">
+            <div class="row">
+                <div class="tab-content text-center" id="myTabContent">
+                    <div class="tab-pane fade show active" id="juice" role="tabpanel" aria-labelledby="juice-tab">
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice1.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice2.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice3.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice4.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice5.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                        <figure class="figure col-12 col-md-5 col-lg-4 text-center">
+                            <img src="frontend/images/category/juice6.jpg" class="img-figure img-fluid" alt="">
+                            <h4 class="mt-3">Strawbery Juices</h4>
+                            <p class="text-muted">Chow Marcell</p>
+                        </figure>
+                    </div>
+                    <div class="tab-pane fade" id="vegetable" role="tabpanel" aria-labelledby="vegetable-tab">vegetable</div>
+                    <div class="tab-pane fade" id="healty" role="tabpanel" aria-labelledby="healty-tab">healty</div>
+                    <div class="tab-pane fade" id="seafood" role="tabpanel" aria-labelledby="seafood-tab">seafood</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End juices -->
+
+
+    <!-- Reviews -->
+    <section class="section-reviews-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 text-center mb-5">
+                    <h3>Customer <span>Reviews</span></h3>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <img src="frontend/images/reviews/avatar1.jpg" class="card-img-top img-fluid w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <h5 class="card-text">Wiku Karno, 21</h5>
+                            <p>"Masakannya Lezat, nikmat, <br> bikin nagih terus."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <img src="frontend/images/reviews/avatar2.jpg" class="card-img-top img-fluid w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <h5 class="card-text">Elya Fitriyani, 17</h5>
+                            <p>"Masakannya Lezat, nikmat, <br> bikin nagih terus."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <img src="frontend/images/reviews/avatar3.jpg" class="card-img-top img-fluid w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <h5 class="card-text">Siti Sandah , 21</h5>
+                            <p>"Masakannya Lezat, nikmat, <br> bikin nagih terus."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <img src="frontend/images/reviews/avatar4.jpg" class="card-img-top img-fluid w-50 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <h5 class="card-text">Yursanto, 36</h5>
+                            <p>"Masakannya Lezat, nikmat, <br> bikin nagih terus."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Reviews -->
+
+
+    <!-- Chef -->
+    <section class="section-chef-content">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mb-3">
+                    <h3>Our <span>Professional</span> Chef </h3>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef1.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Zeen Arnold</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef2.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Fready Zendberg</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef3.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Chow Marcell</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef4.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Angelista</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef5.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Kelvin Sanco</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef6.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Worf Snijer</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef7.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Syaina</h5>
+                    </figure>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <figure class="figure">
+                        <div class="chef-img">
+                            <img src="frontend/images/chef/chef8.jpg" class="figure-img img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                                <img src="frontend/images/chef/i_verify.png" class="img-fluid icon-verify align-self-center">
+                            </div>
+                        </div>
+                        <h5>Leonardo</h5>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Chef -->
+
+
+    <!-- footer -->
+    <section class="section-footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2 mt-3">
+                    <a href="#" class="brand-img">
+                        <img src="frontend/images/logo/Logo.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Special Course</h5>
+                    <li type="none">
+                        <a href="#">Healty & Muscle</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Office Food Daily</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Wedding Foods</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Happy Kids</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Event & Catering</a>
+                    </li>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Company</h5>
+                    <li type="none">
+                        <a href="#">About</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Career</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">API Developer</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Our Restaurant</h5>
+                    <p>Kebon Jeruk, Riau</p>
+                    <p>Support@wareg.id</p>
+                    <p>021 - 9502 - 1234</p>
+                </div>
+                <div class="col-12 col-lg-3 offset-lg-2 mt-3">
+                    <h5>Social Media</h5>
+                    <div class="media">
+                        <a href="#">
+                            <img src="frontend/images/social/youtube.png" class="img-fluid" alt="">
+                            <img src="frontend/images/social/instagram.png" class="img-fluid" alt="">
+                            <img src="frontend/images/social/twitter.png" class="img-fluid" alt="">
+                            <img src="frontend/images/social/facebook.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Download our app</h5>
+                    <div class="media">
+                        <a href="#">
+                            <img src="frontend/images/social/playstore.png" class="img-fluid" alt="">
+                            <img src="frontend/images/social/Appstore.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <p>All right reserved by wareg.id</p>
+            </div>
+        </div>
+    </section>
+    <!-- End footer -->
+
+
+
+
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="frontend/script/main.js"></script>
+    <!-- end script -->
+
+</body>
+
+</html>
