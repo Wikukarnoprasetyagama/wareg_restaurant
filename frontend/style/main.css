@@ -168,6 +168,8 @@ body {
 }
 
 .section-menu-special {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 100px;
 }
 
