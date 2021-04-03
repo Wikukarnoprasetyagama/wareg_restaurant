@@ -38,9 +38,16 @@ body {
 }
 
 .navbar form .btn-account-desktop {
-  background-color: #FFF5E1;
   color: #FFAB00;
   font-size: 18px;
+}
+
+.navbar form .btn-account-desktop:hover {
+  background-color: #FFAB00;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .section-header h1 {
@@ -191,10 +198,13 @@ body {
   width: 15px;
 }
 
+.section-menu-special .img-special p {
+  color: #cfcfcf;
+}
+
 .section-menu-special .img-special figure {
   border-radius: 50px;
   max-width: 226px;
-  width: 100%;
   max-height: 209px;
   overflow: hidden;
 }
@@ -244,9 +254,39 @@ body {
   color: #000 !important;
 }
 
-.section-juices-category figure {
+.section-juices-category a {
+  font-size: 18px;
+  text-decoration: none;
+  background: #FFAB00;
+  color: #fff;
+}
+
+.section-juices-category a:hover {
+  background: #ffba30;
+  color: #fff;
+}
+
+.section-juices-category .figure {
   margin-left: -3px;
   margin-top: 20px;
+  position: relative;
+}
+
+.section-juices-category .figure .category-img a {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  bottom: 99px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+  border-radius: 20px;
+}
+
+.section-juices-category .figure .category-img a:hover {
+  opacity: 1;
 }
 
 .section-reviews-content {

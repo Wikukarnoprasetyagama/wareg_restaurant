@@ -35,9 +35,14 @@ body {
             font-size: 18px;
         }
         .btn-account-desktop {
-            background-color: #FFF5E1;
             color: #FFAB00;
             font-size: 18px;
+            &:hover {
+                background-color: #FFAB00;
+                color: #fff;
+                font-size: 18px;
+                transition: all 0.8s;
+            }
         }
     }
     // End Button
@@ -193,10 +198,12 @@ body {
         width: 15px;
     }
     .img-special {
+        p {
+            color: #cfcfcf;
+        }
         figure {
             border-radius: 50px;
             max-width: 226px;
-            width: 100%;
             max-height: 209px;
             overflow: hidden;
         }
@@ -243,9 +250,34 @@ body {
 }
 
 .section-juices-category {
-    figure {
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        background: #FFAB00;
+        color: #fff;
+        &:hover {
+            background: #ffba30;
+            color: #fff;
+        }
+    }
+    .figure {
         margin-left: -3px;
         margin-top: 20px;
+        position: relative;
+        .category-img a {
+            position: absolute;
+            top: 0;
+            left: 8px;
+            right: 8px;
+            bottom: 99px;
+            background-color: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.7s;
+            border-radius: 20px;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }
 
