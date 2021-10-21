@@ -16,29 +16,29 @@ body {
     .navbar-nav {
         font-size: 18px;
         .nav-link.active {
-            color: #FFAB00;
+            color: #ffab00;
             font-weight: 600;
         }
         .nav-link {
-            color: #FFAB00;
+            color: #ffab00;
             font-weight: 400;
         }
     }
     form {
         .bi {
-            color: #FFAB00;
+            color: #ffab00;
         }
         // Button
         .btn-account-mobile {
-            background-color: #FFAB00;
+            background-color: #ffab00;
             color: #fff;
             font-size: 18px;
         }
         .btn-account-desktop {
-            color: #FFAB00;
+            color: #ffab00;
             font-size: 18px;
             &:hover {
-                background-color: #FFAB00;
+                background-color: #ffab00;
                 color: #fff;
                 font-size: 18px;
                 transition: all 0.8s;
@@ -56,11 +56,11 @@ body {
         font-family: "Balsamiq Sans";
         font-weight: bold;
         span {
-            color: #FFAB00;
+            color: #ffab00;
         }
     }
     p {
-        color: #BEBEBE;
+        color: #bebebe;
         font-weight: 400;
         font-size: 18px;
     }
@@ -68,7 +68,7 @@ body {
         max-height: 500px;
     }
     .btn-get-now {
-        background-color: #FFAB00;
+        background-color: #ffab00;
         color: #fff;
         &:hover {
             background-color: #ffba30;
@@ -80,7 +80,7 @@ body {
 // End Hero
 // About
 .section-seafood {
-    background-image: url('../images/about/bg_discount.png');
+    background-image: url("../images/about/bg_discount.png");
     background-size: cover;
     height: 470px;
     h1 {
@@ -98,7 +98,7 @@ body {
         color: #ffab00;
     }
     a {
-        color: #FFAB00;
+        color: #ffab00;
     }
 }
 
@@ -134,7 +134,7 @@ body {
 
 // End About
 // Responsive layouts
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .section-header {
         img {
             margin-top: 65px;
@@ -211,7 +211,7 @@ body {
             transition: transform 1s ease;
             object-fit: cover;
             &:hover {
-                transform: scale(1.5);
+                transform: scale(1.2);
             }
         }
     }
@@ -239,7 +239,7 @@ body {
     .nav {
         .nav-item {
             .active {
-                border-bottom: 5px #FFAB00 solid !important;
+                border-bottom: 5px #ffab00 solid !important;
             }
         }
     }
@@ -253,7 +253,7 @@ body {
     a {
         font-size: 18px;
         text-decoration: none;
-        background: #FFAB00;
+        background: #ffab00;
         color: #fff;
         &:hover {
             background: #ffba30;
@@ -339,13 +339,13 @@ body {
     }
     a {
         font-size: 18px;
-        color: #A2A2A2;
+        color: #a2a2a2;
         font-weight: 300;
         text-decoration: none;
     }
     p {
         font-size: 18px;
-        color: #A2A2A2;
+        color: #a2a2a2;
         font-weight: 300;
     }
 }
