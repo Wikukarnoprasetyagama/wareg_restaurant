@@ -113,6 +113,17 @@ body {
   color: #ffab00;
 }
 
+.section-login .forgot-password {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.section-login .forgot-password:hover {
+  color: #ffab00;
+}
+
 .section-header h1 {
   margin-top: 100px;
   font-family: "Balsamiq Sans";
