@@ -57,49 +57,68 @@ body {
     // End Button
 }
 
-.modal {
-    .modal-body {
-        .figure {
-            img {
-                max-height: 50px;
-            }
+.section-login {
+    margin-top: 5%;
 
-            h1 {
-                font-size: 42px;
-                font-weight: 600;
-            }
+    .figure {
+        img {
+            max-height: 50px;
         }
 
-        h2 {
-            font-size: 26px;
-            font-weight: 500;
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #a2a2a2;
+    }
+
+    .btn-daftar {
+        background-color: #ffab00;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .btn-google {
+        background-color: #d6d6d6;
+        color: #212529;
+        font-weight: 400;
+        font-size: 16px;
+
+        img {
+            max-height: 20px;
         }
 
-        p {
-            font-size: 16px;
-            font-weight: 300;
-            color: #a2a2a2;
+        span {
+            margin-left: 15px;
         }
+    }
 
-        .btn-daftar {
-            background-color: #ffab00;
-            color: #fff;
-            font-weight: 400;
-            font-size: 18px;
-        }
-
-        .btn-google {
-            background-color: #d6d6d6;
+    .already-account {
+        span {
             color: #212529;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 16px;
 
-            img {
-                max-height: 27px;
-            }
+            a {
+                color: #212529;
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: none;
 
-            span {
-                margin-left: 15px;
+                &:hover {
+                    color: #ffab00;
+                }
             }
         }
     }
