@@ -456,4 +456,12 @@ body {
   text-decoration: none;
   color: #ffab00;
 }
+
+.section-single-product .product-name h3 {
+  font-size: 32px;
+}
+
+.section-single-product .price {
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
