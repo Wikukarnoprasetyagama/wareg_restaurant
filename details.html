@@ -90,52 +90,33 @@
     <!-- End Breadcrumb -->
 
     <!-- Single Product -->
-    <section class="section-single-product">
+    <section class="section-single-product" id="product">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 mb-3">
-            <figure class="figure">
+            <transition name="slide-fade" mode="out-in">
               <img
-                src="/frontend/images/details/noodle.jpg"
-                class="figure-img img-fluid"
+                :key="photos[activePhoto].id"
+                :src="photos[activePhoto].url"
+                class="main-image w-100"
                 alt=""
               />
-            </figure>
-            <div class="row">
-              <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+            </transition>
+            <div class="row mt-3">
+              <div
+                class="col-3 col-sm-3 col-md-3 col-lg-3"
+                v-for="(photo, index) in photos"
+                :key="photo.id"
+              >
                 <div class="child-product-thumbnail">
-                  <img
-                    src="/frontend/images/category/healty/item5.jpg"
-                    class="img-fluid h-25"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="child-product-thumbnail">
-                  <img
-                    src="/frontend/images/category/healty/item5.jpg"
-                    class="img-fluid h-25"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="child-product-thumbnail">
-                  <img
-                    src="/frontend/images/category/healty/item5.jpg"
-                    class="img-fluid h-25"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-                <div class="child-product-thumbnail">
-                  <img
-                    src="/frontend/images/category/healty/item5.jpg"
-                    class="img-fluid h-25"
-                    alt=""
-                  />
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 h-75 thumbnail-image"
+                      :class="{ active: index == activePhoto }"
+                      alt=""
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -350,9 +331,41 @@
     <script src="frontend/library/aos/aos.js"></script>
     <script src="frontend/script/main.js"></script>
     <script>
-      AOS.init({
-        easing: "ease-out-back",
-        duration: "2500",
+      AOS.init();
+    </script>
+    <script src="/frontend/library/vue/vue.js"></script>
+    <script>
+      var product = new Vue({
+        el: "#product",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 0,
+          photos: [
+            {
+              id: 1,
+              url: "/frontend/images/details/noodle.jpg",
+            },
+            {
+              id: 2,
+              url: "/frontend/images/details/sate.jpg",
+            },
+            {
+              id: 3,
+              url: "/frontend/images/details/juices.jpg",
+            },
+            {
+              id: 4,
+              url: "/frontend/images/details/hamburger.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
       });
     </script>
     <!-- end script -->
