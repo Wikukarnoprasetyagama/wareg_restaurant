@@ -128,6 +128,7 @@ body {
   margin-top: 120px;
   font-family: "Balsamiq Sans";
   font-weight: bold;
+  font-size: 48px;
 }
 
 .section-header-content h1 span {
@@ -247,53 +248,62 @@ body {
   }
 }
 
-.section-menu-special {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 100px;
+.section-special-content {
+  margin-top: 120px;
 }
 
-.section-menu-special h3 {
+.section-special-content h3 {
   font-family: "Balsamiq Sans";
-  font-weight: bold;
-  font-size: 38px;
-  color: #000;
+  font-weight: 600;
+  font-size: 42px;
 }
 
-.section-menu-special h3 span {
-  font-family: "Balsamiq Sans";
-  font-weight: bold;
-  font-size: 38px;
+.section-special-content h3 span {
   color: #ffab00;
 }
 
-.section-menu-special i {
-  width: 15px;
+.section-special-content h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.section-menu-special .img-special p {
-  color: #cfcfcf;
+.section-special-content .price {
+  color: #ffab00;
+  font-weight: 500;
 }
 
-.section-menu-special .img-special figure {
-  border-radius: 50px;
-  max-width: 226px;
-  max-height: 209px;
-  overflow: hidden;
+.section-special-content .figure {
+  margin-bottom: -1px;
+  position: relative;
 }
 
-.section-menu-special .img-special img {
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
-  -o-object-fit: cover;
-     object-fit: cover;
+.section-special-content .figure .img-category a {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  border-radius: 8px;
 }
 
-.section-menu-special .img-special img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.section-special-content .figure .img-category a:hover {
+  opacity: 1;
+}
+
+.section-special-content a {
+  font-size: 18px;
+  text-decoration: none;
+  background: #ffab00;
+  color: #fff;
+}
+
+.section-special-content a:hover {
+  background: #ffba30;
+  color: #fff;
 }
 
 .section-category-content {
@@ -348,14 +358,14 @@ body {
 .section-juices-category .figure .category-img a {
   position: absolute;
   top: 0;
-  left: 8px;
-  right: 8px;
+  left: 0px;
+  right: 0px;
   bottom: 99px;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transition: opacity 0.7s;
-  transition: opacity 0.7s;
-  border-radius: 20px;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  border-radius: 8px;
 }
 
 .section-juices-category .figure .category-img a:hover {
