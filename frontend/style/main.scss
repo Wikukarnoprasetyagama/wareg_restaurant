@@ -1,40 +1,15 @@
 @import "global";
 @import "fonts";
 @import "navbar";
+@import "footer";
 
 @import "pages/auth";
 @import "pages/hero";
 @import "pages/about";
 @import "pages/special";
 @import "pages/category";
-// Category
+@import "pages/customer-reviews";
 
-// End Category
-// Reviews
-.section-reviews-content {
-  margin-top: 100px;
-
-  h3 {
-    font-family: "Balsamiq Sans";
-    font-weight: bold;
-    font-size: 38px;
-    color: #000;
-
-    span {
-      font-family: "Balsamiq Sans";
-      font-weight: bold;
-      font-size: 38px;
-      color: #ffab00;
-    }
-  }
-
-  i {
-    width: 15px;
-  }
-}
-
-// End Reviews
-// Chef
 .section-chef-content {
   margin-top: 100px;
 
@@ -151,29 +126,3 @@
   }
 }
 // End Details
-
-.section-footer {
-  margin-top: 150px;
-  h5 {
-    font-weight: bold;
-  }
-
-  .description {
-    p {
-      font-size: 16px;
-    }
-  }
-  .list-unstyled {
-    li {
-      a {
-        text-decoration: none;
-        color: #212529;
-
-        &:hover {
-          text-decoration: underline;
-          color: #ffab00;
-        }
-      }
-    }
-  }
-}

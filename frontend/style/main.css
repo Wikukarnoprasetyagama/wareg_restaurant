@@ -43,6 +43,28 @@ body {
   color: #fff;
 }
 
+.section-footer {
+  margin-top: 150px;
+}
+
+.section-footer h3 {
+  font-weight: 500;
+}
+
+.section-footer .description p {
+  font-size: 16px;
+}
+
+.section-footer .list-unstyled li a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.section-footer .list-unstyled li a:hover {
+  text-decoration: underline;
+  color: #ffab00;
+}
+
 .section-login {
   margin-top: 5%;
 }
@@ -355,6 +377,10 @@ body {
   position: relative;
 }
 
+.section-juices-category .figure img {
+  border-radius: 8px;
+}
+
 .section-juices-category .figure .category-img a {
   position: absolute;
   top: 0;
@@ -390,8 +416,20 @@ body {
   color: #ffab00;
 }
 
-.section-reviews-content i {
-  width: 15px;
+.section-reviews-content .card {
+  height: 400px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.section-reviews-content .card h4 {
+  font-size: 20px;
+}
+
+.section-reviews-content .card p {
+  font-size: 16px;
+  color: #b4b4b4;
 }
 
 .section-chef-content {
@@ -506,27 +544,5 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #282c30;
-}
-
-.section-footer {
-  margin-top: 150px;
-}
-
-.section-footer h5 {
-  font-weight: bold;
-}
-
-.section-footer .description p {
-  font-size: 16px;
-}
-
-.section-footer .list-unstyled li a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.section-footer .list-unstyled li a:hover {
-  text-decoration: underline;
-  color: #ffab00;
 }
 /*# sourceMappingURL=main.css.map */
